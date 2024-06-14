@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" 2d matrix that turn 90 
+""" 2d matrix that turn 90
     degree clockwise
 """
 
@@ -16,13 +16,12 @@ def rotate_2d_matrix(matrix):
                         7 4 1
                         8 5 2
                         9 6 3
-        
         outer_list_size = 3
         inner_list_size = 3
     """
 
     for i in range(len(matrix)):
-        for j in range(i,len(matrix)):
+        for j in range(i, len(matrix)):
             matrix[i][j], matrix[j][i] = matrix[j][i], matrix[i][j]
 
     for i in range(len(matrix)):
